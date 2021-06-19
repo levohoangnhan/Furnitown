@@ -1,5 +1,4 @@
 .slider {
-    
     .slider__item--wrap {
         position: relative;
         .slider__item {
@@ -59,7 +58,6 @@
                 width: 100vw;
                 height: 100vh;
                 object-fit: cover;
-                filter:brightness(40%);
                 padding: 0 -5px;
             }
             // &.active {
@@ -75,43 +73,36 @@
     
     }
     .container-fluid {
-        .paging {
+        .slider__top {
             position: absolute;
-            bottom: 30px;
-            left : 30px;
+            top: 30px;
+            left: 30px;
             z-index: 10;
-            color: #bea67c;
-            font-size: 40px;
-            font-weight: bold;
             display: flex;
-            align-items: center;
-            width: max-content;
-            .paging__number {
-                margin: 0 25px;
-            }
-            .inline::before  {
-                content: "";
-                width: 40px;
-                height: 4px;
-                background : #bea67c;
-                display: inline-block;
-                margin: 10px 5px;
-            }
-            .flickity-page-dots {
-                .dot:hover {
-                    transition: 0.4s;
-                    background: #bea67c;
+            .top__name{
+                a{
+                    text-decoration: none;
+                    color: #000;
+                    margin-right: 50px;
                 }
-                .dot {
+            }
+            .top__share{
+                display: flex;
+                cursor: pointer;
+                h2{
                     transition: 0.4s;
-                    &.is-selected {
-                         background: #bea67c;
-                         transition: 0.4s;
-                    }
+                    margin-right: 10px;
+                }
+                h2:hover{
+                    transition: 0.4s;
+                    margin-right: 20px;
+                }
+                img{
+                    width: 25px;
+                    transition: 0.4s;
                 }
             }
         }
-        
         .mouse  {
             z-index: 20;
             .mouseicon {
@@ -125,7 +116,6 @@
                 to {top: 95%;opacity:1}
             }
         } 
-            
         .control {
             cursor: pointer;
             position: absolute;
@@ -152,28 +142,6 @@
                 background: #bea67c;
                 transition: 0.4s;
             }
-        }
-    }
-}
-
-@include xs {
-    .slider {
-        .slider__item-text{
-            h2 {
-                font-size: 30px;
-            }
-            
-        }
-        .slider__bottom {
-            .paging {
-                .inline {
-                    display: none;
-                    margin: 0;
-                }
-                
-            }
-            
-            
         }
     }
 }
