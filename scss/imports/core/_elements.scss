@@ -1,14 +1,38 @@
 // css button, title, icon, elements...
-@mixin tith2 {
+@mixin button {
+    text-decoration: none;
+    color: #000;
+    font-size:13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+@mixin titH2 {
     font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
 }
-
-@mixin butmore {
+@mixin textBox {
+    text-decoration: none;
+    font-size: 12px;
+    font-family: pn;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+}
+@mixin textElis {
+    font-size: 12px;
+    font-style : italic;
+}
+@mixin textUp {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+@mixin button {
     text-decoration: none;
     color: #000;
-    font-size:13px;
+    font-size:12px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -18,10 +42,18 @@
     filter: invert(100%);
 }
 
-@mixin inbe {
+@mixin inline {
     content: "";
-    width: 50px;
-    height: 3px;
-    background : #bea67c;
+    width: 650px;
+    height: 2px;
+    background :rgb(255, 255, 255);
+    display: inline-block;
+}
+
+@mixin inline1 {
+    content: "";
+    width: 100px;
+    height: 1px;
+    background :#000;
     display: inline-block;
 }

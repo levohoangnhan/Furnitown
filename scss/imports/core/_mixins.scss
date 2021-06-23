@@ -222,18 +222,49 @@
 	font-family: "Proxima Nova";
 }
 
-@mixin styletext ($ff: arial,$fz: 12px,$td: none,$cl: #fff){ 
+@mixin titSlide ($ff: 'eb',$fz: 80px,$td: none,$cl: #fff,$text-transform : uppercase,$ls : 3px){ 
     font-family: $ff;
     font-size: $fz;
     text-decoration: $td;
     color: $cl;
+	text-transform: $text-transform;
+	letter-spacing: $ls;
+
 }
 
+@mixin titDes ($ff: 'QuickSand',$fz: 14px,$td: none,$cl: #fff,$text-transform : uppercase,$ls : 1px,$fw: 600){ 
+    font-family: $ff;
+    font-size: $fz;
+    text-decoration: $td;
+    color: $cl;
+	text-transform: $text-transform;
+	letter-spacing: $ls;
+	font-weight: $fw;
+}
+
+
+@mixin midFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin midTrans {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@mixin TransX {
+    left: 50%;
+    transform: translateX(-50%);
+}
+@mixin TransY {
+	top: 50%;
+    transform: translateY(-50%);
+}
 @mixin imgcen {
 	width: 100%;
     min-width: 100%;
     min-height: 100%;
     object-fit: cover;
-
-	
 }

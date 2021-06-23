@@ -7,8 +7,8 @@ let $ListItemSlider = $('.slider__item--wrap');
 
 $ListItemSlider.flickity({
     prevNextButtons: false,
-    freeScroll: true,
-    pageDots: true,
+    freeScroll: false,
+    pageDots: false,
     cellAlign: 'left',
     wrapAround: true,
     groupCells: 1,
